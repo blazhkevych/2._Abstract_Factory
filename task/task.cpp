@@ -55,7 +55,36 @@
 
 #include <iostream>
 
+#include "Africa.h"
+#include "AnimalWorld.h"
+#include "Continent.h"
+#include "North_America.h"
+
+void ClientFunc(Continent* factory)
+{
+    AnimalWorld * client = nullptr;
+    client = new AnimalWorld(factory);
+    client->MealsHerbivores();
+    client->NutritionCarnivores(reinterpret_cast<Herbivore*>(factory)); // Поскольку континент Африка с мейна с двумя зверушками уже есть, как теперь вытянуть из этого континента травоядное
+									// для того чтобы скормить его хищнику ?
+    delete client;
+    cout << endl;
+}
+
 int main()
 {
-    return 0;
+    srand(static_cast<unsigned int>(time(0)));
+
+    Continent* continent = new Africa;
+    ClientFunc(continent);
+    delete continent;
+
+
+
+
+   /* Continent* continent2 = new North_America;
+    ClientFunc(continent2);
+    delete continent2;*/
+
+    system("pause");
 }

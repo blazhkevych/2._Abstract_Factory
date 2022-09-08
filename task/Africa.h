@@ -10,12 +10,13 @@ using namespace std;
 class Africa :
 	public Continent
 {
-	 Herbivore* CreateHerbivores() override
+public:
+	Herbivore* CreateHerbivores() override
 	{
 		return new Wildebeest();
 	}
 
-	 Carnivore* CreateCarnivore() override
+	Carnivore* CreateCarnivore() override
 	{
 		return new Lion();
 	}

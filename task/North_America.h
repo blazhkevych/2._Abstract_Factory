@@ -9,6 +9,7 @@ using namespace std;
 class North_America :
 	public Continent
 {
+public:
 	 Herbivore* CreateHerbivores() override
 	{
 		return new Bison();

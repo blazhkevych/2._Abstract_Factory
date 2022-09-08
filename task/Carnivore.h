@@ -5,5 +5,6 @@
 class Carnivore abstract
 {
 public:
+	virtual void PrintCarnivore() abstract;
 	virtual void Eat(Herbivore* herbivore) abstract; // Кушать травоядное.
 };
