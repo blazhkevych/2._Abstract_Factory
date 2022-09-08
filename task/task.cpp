@@ -89,6 +89,4 @@ int main()
 	Continent* continent3 = new Eurasia;
 	ClientFunc(continent3);
 	delete continent3;
-
-	system("pause");
 }
