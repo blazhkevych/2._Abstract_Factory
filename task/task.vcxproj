@@ -129,12 +129,10 @@
   <ItemGroup>
     <ClCompile Include="Bison.cpp" />
     <ClCompile Include="AnimalWorld.cpp" />
-    <ClCompile Include="Continent.cpp" />
-    <ClCompile Include="Herbivore.cpp" />
+    <ClCompile Include="Elk.cpp" />
     <ClCompile Include="Lion.cpp" />
-    <ClCompile Include="North_America.cpp" />
-    <ClCompile Include="Carnivore.cpp" />
     <ClCompile Include="task.cpp" />
+    <ClCompile Include="Tiger.cpp" />
     <ClCompile Include="Wildebeest.cpp" />
     <ClCompile Include="Wolf.cpp" />
   </ItemGroup>
@@ -143,10 +141,13 @@
     <ClInclude Include="Bison.h" />
     <ClInclude Include="AnimalWorld.h" />
     <ClInclude Include="Continent.h" />
+    <ClInclude Include="Elk.h" />
+    <ClInclude Include="Eurasia.h" />
     <ClInclude Include="Herbivore.h" />
     <ClInclude Include="Lion.h" />
     <ClInclude Include="North_America.h" />
     <ClInclude Include="Carnivore.h" />
+    <ClInclude Include="Tiger.h" />
     <ClInclude Include="Wildebeest.h" />
     <ClInclude Include="Wolf.h" />
   </ItemGroup>

@@ -7,15 +7,15 @@
 
 using namespace std;
 
-// Волк (Wolf) - конкретный продукт.
-class Wolf :
+// Тигр (Tiger) - конкретный продукт.
+class Tiger :
 	public Carnivore
 {
 	double m_power = GetRandomNumber(15, 50); // Сила - свойство плотоядного животного.
 public:
 	void PrintCarnivore() override
 	{
-		cout << "I am a Wolf and my strength is " << m_power << '.' << endl;
+		cout << "I am a Tiger and my strength is " << m_power << '.' << endl;
 	}
 
 	/*Кушать травоядное животное - метод конкретного

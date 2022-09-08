@@ -6,8 +6,8 @@
 
 using namespace std;
 
-// Бизон (Bison) - конкретный продукт.
-class Bison :
+// Лось (Elk) - конкретный продукт.
+class Elk :
 	public Herbivore
 {
 	double m_weight = GetRandomNumber(1, 50);	// Вес - свойство травоядного животного.
@@ -15,14 +15,14 @@ class Bison :
 public:
 	void PrintHerbivore() override
 	{
-		cout << "I am a " << m_weight << " kg. Bison !" << endl;
+		cout << "I am a " << m_weight << " kg. Elk !" << endl;
 	}
 
-	// Кушать траву (Eat grass) - метод конкретного продукта (добавляют к весу + 10).
+	// Кушать траву (Eat grass) - метод конкретного продукта (добавляют к весу + 10).		
 	void EatGrass() override
 	{
-		cout << "I eat grass ! Now my weight is " << m_weight << " kg. !" << endl;
 		m_weight += 10;
+		cout << "I eat grass ! Now my weight is " << m_weight << " kg. !" << endl;
 	}
 
 	double get_weight() { return m_weight; }		// Получить вес травоядного.

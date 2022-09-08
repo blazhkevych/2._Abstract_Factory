@@ -1,4 +1,4 @@
-﻿#include "Wolf.h"
+﻿#include "Tiger.h"
 #include "Wildebeest.h"
 
 /*
@@ -10,7 +10,7 @@
 чем вес травоядного животного, то сила плотоядного
 уменьшаются на - 10.
 */
-void Wolf::Eat(Herbivore* herbivore)
+void Tiger::Eat(Herbivore* herbivore)
 {
 	if (m_power > herbivore->get_weight())
 	{
@@ -27,7 +27,7 @@ void Wolf::Eat(Herbivore* herbivore)
 
 // Генерируем рандомное число между значениями min и max.
 // Предполагается, что функцию srand() уже вызывали.
-int Wolf::GetRandomNumber(int min, int max)
+int Tiger::GetRandomNumber(int min, int max)
 {
 	static const double fraction = 1.0 / (static_cast<double>(RAND_MAX) + 1.0);
 	// Равномерно распределяем рандомное число в нашем диапазоне.

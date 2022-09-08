@@ -1,8 +1,10 @@
 ﻿#pragma once
+
 #include <iostream>
 #include <ostream>
 
 #include "Carnivore.h"
+
 using namespace std;
 
 // Лев (Lion) - конкретный продукт;
@@ -13,7 +15,7 @@ class Lion :
 public:
 	void PrintCarnivore() override
 	{
-		cout << "I am Lion !" <<endl;
+		cout << "I am a lion and my strength is " << m_power << '.' << endl;
 	}
 
 	/*Кушать травоядное животное - метод конкретного

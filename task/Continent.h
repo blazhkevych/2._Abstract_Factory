@@ -1,4 +1,5 @@
 ﻿#pragma once
+
 #include "Herbivore.h"
 #include "Carnivore.h"
 
@@ -6,6 +7,6 @@
 class Continent abstract
 {
 public:
-	virtual Herbivore* CreateHerbivores() abstract;
+	virtual Herbivore* CreateHerbivore() abstract;
 	virtual Carnivore* CreateCarnivore() abstract;
 };

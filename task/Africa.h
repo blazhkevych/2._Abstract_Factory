@@ -1,17 +1,19 @@
 ﻿#pragma once
-#include "Continent.h"
+
 #include <iostream>
 
+#include "Continent.h"
 #include "Lion.h"
 #include "Wildebeest.h"
+
 using namespace std;
 
-//Африка (Africa) - конкретная фабрика;
+//Африка (Africa) - конкретная фабрика.
 class Africa :
 	public Continent
 {
 public:
-	Herbivore* CreateHerbivores() override
+	Herbivore* CreateHerbivore() override
 	{
 		return new Wildebeest();
 	}
